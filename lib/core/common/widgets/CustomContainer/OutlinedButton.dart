@@ -7,10 +7,12 @@ import '../../../utils/constants/colors.dart';
 class OutlinedContainer extends StatelessWidget {
   const OutlinedContainer({
     super.key, required this.child, required this.title,
+    this.showEdit = true,
   });
 
   final Widget child;
   final String title;
+  final bool showEdit;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,6 +28,7 @@ class OutlinedContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
                Text(title,style:const TextStyle(fontSize: 16.0,fontWeight: FontWeight.w500,color: AppColors.black,)),
+              if(showEdit)
               Image.asset('assets/icons/img_3.png',height: 16,width: 16,),
             ],
           ),

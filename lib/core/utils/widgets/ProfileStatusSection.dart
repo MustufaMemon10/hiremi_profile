@@ -22,7 +22,7 @@ class ProfileStatusSection extends StatelessWidget {
             lineWidth: 6,
             percent: percent,
             center: Text('$showPercent%'),
-            progressColor: AppColors.progressColor,
+            progressColor: AppColors.green,
             backgroundColor: Colors.transparent,
           ),
           const SizedBox(

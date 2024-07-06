@@ -12,8 +12,8 @@ class AppColors{
 
 
   /// Other Colors
-  static Color progressColor = HexColor('#34AD78');
-  static Color lightBlue = HexColor("#ECF5FF");
+  static Color green = HexColor('#34AD78');
+  static Color bgBlue = HexColor("#ECF5FF");
 
   /// Neutral Colors
   static Color secondaryText = HexColor('#808080');

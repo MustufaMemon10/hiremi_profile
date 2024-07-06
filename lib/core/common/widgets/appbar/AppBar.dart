@@ -28,7 +28,7 @@ class SAppbar extends StatelessWidget implements PreferredSizeWidget {
       Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8.0),
-            color: AppColors.lightBlue,
+            color: AppColors.bgBlue,
           ),
           child: const Icon(Icons.menu)),
       title: Text('Profile',style: Theme.of(context).textTheme.headlineSmall,),
@@ -36,7 +36,7 @@ class SAppbar extends StatelessWidget implements PreferredSizeWidget {
       actions: [Container(
         decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: AppColors.lightBlue,
+        color: AppColors.bgBlue,
         ),
         child: Center(child:IconButton(onPressed: (){},icon: const Icon(Icons.notifications_outlined),),)),],
     );

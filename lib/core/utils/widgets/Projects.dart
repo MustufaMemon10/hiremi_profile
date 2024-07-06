@@ -67,6 +67,7 @@ class ProjectsChild extends StatelessWidget {
               const SizedBox(width: 2.0,),
               Text(link,style: const TextStyle(
                 decoration: TextDecoration.underline,
+                decorationColor: Colors.blue,
                 fontWeight: FontWeight.w400,fontSize: 8,color: Colors.blue
                       ),
                       ),

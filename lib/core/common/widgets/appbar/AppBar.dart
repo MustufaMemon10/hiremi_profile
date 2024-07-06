@@ -25,6 +25,7 @@ class SAppbar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.transparent,
       leading:
       Container(
+          padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8.0),
             color: AppColors.bgBlue,

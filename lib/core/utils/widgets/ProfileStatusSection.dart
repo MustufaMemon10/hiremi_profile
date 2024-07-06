@@ -39,7 +39,8 @@ class ProfileStatusSection extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
                 border: Border.all(
-                  color: const Color(0xFFC1272D),
+                  width: 0.7,
+                  color: AppColors.primary,
                 )),
             child: Row(
               mainAxisSize: MainAxisSize.min,

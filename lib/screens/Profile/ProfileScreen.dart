@@ -207,7 +207,7 @@ class PersonalLinksChild extends StatelessWidget {
               color: link.isNotEmpty ? AppColors.green : Colors.transparent,
               border: Border.all(width: 0.5, color: AppColors.secondaryText),
               radius: 2,
-              padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 9),
+              padding: const EdgeInsets.only(left: 9,top: 7,bottom: 7),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -216,7 +216,7 @@ class PersonalLinksChild extends StatelessWidget {
                     size: 9,
                     color: link.isNotEmpty
                         ? AppColors.white
-                        : Colors.black.withOpacity(0.25),
+                        : Colors.black.withOpacity(.75)
                   ),
                   const SizedBox(
                     width: Sizes.xs * 1.3,
@@ -241,9 +241,9 @@ class PersonalLinksChild extends StatelessWidget {
         Expanded(
           flex: 7,
           child: RoundedContainer(
-              border: Border.all(width: 0.5, color: AppColors.green),
+              border: Border.all(width: 0.5, color: link.isNotEmpty?AppColors.green: AppColors.secondaryText),
               radius: 2,
-              padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 9),
+              padding: const EdgeInsets.only(left: 9,top: 7,bottom: 7),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -254,7 +254,7 @@ class PersonalLinksChild extends StatelessWidget {
                         size: 9,
                         color: link.isNotEmpty
                             ? Colors.blue
-                            : Colors.black.withOpacity(0.25),
+                          : Colors.black.withOpacity(.75),
                         weight: 1.4,
                       )),
                   const SizedBox(

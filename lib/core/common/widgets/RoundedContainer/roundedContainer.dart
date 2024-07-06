@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../utils/constants/AppSizes.dart';
 
 class RoundedContainer extends StatelessWidget {
   const RoundedContainer({

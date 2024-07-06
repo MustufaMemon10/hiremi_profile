@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../utils/constants/AppSizes.dart';
 import '../../../utils/constants/colors.dart';
 
 class SAppbar extends StatelessWidget implements PreferredSizeWidget {

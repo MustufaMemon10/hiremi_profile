@@ -12,20 +12,20 @@ class Experience extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const OutlinedContainer(
+    return  OutlinedContainer(
       title: 'Experience',
       child:
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ExperienceChild(
+          const ExperienceChild(
             title: 'Flutter UI Developer',
             company: 'CRTD Technologies',
             jobType: 'Remote',
             timing: 'Full time • Aug 2024 - Present',
           ),
-          SizedBox(height: Sizes.md,),
-          ExperienceChild(
+          SizedBox(height: Sizes.responsiveMd(context),),
+          const ExperienceChild(
             title: 'Backend Developer',
             company: 'CRTD Technologies',
             jobType: 'Bhopal, Madhya Pradesh, India',

@@ -18,7 +18,7 @@ class OutlinedContainer extends StatelessWidget {
     return Container(
       padding:  EdgeInsets.all(Sizes.responsiveDefaultSpace(context)),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(Sizes.sm),
+          borderRadius: BorderRadius.circular(Sizes.radiusSm),
           border: Border.all(width: 0.5,color: AppColors.secondaryText)
       ),
       child: Column(

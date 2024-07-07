@@ -50,7 +50,7 @@ class PersonalLinks extends StatelessWidget {
                     backgroundColor: AppColors.primary,
                     elevation: 0,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(Sizes.xs),
+                      borderRadius: BorderRadius.circular(Sizes.radiusXs),
                     ),
                     padding: EdgeInsets.symmetric(
                         vertical: Sizes.responsiveHorizontalSpace(context),
@@ -110,8 +110,8 @@ class PersonalLinksChild extends StatelessWidget {
                       color: link.isNotEmpty
                           ? AppColors.white
                           : Colors.black.withOpacity(.75)),
-                  const SizedBox(
-                    width: Sizes.xs * 1.3,
+                   SizedBox(
+                    width: Sizes.responsiveHorizontalSpace(context),
                   ),
                   Padding(
                     padding:

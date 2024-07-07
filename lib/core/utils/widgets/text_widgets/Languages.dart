@@ -21,7 +21,7 @@ class Languages extends StatelessWidget {
         runSpacing: 10,
         children: <Widget>[
           RoundedContainer(
-            radius: Sizes.md,
+            radius: Sizes.radiusMd,
             padding: EdgeInsets.symmetric(
                 horizontal: Sizes.responsiveHorizontalSpace(context),
                 vertical: Sizes.responsiveVerticalSpace(context)),
@@ -38,7 +38,7 @@ class Languages extends StatelessWidget {
             width: Sizes.responsiveSm(context),
           ),
           RoundedContainer(
-            radius: Sizes.md,
+            radius: Sizes.radiusMd,
             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
             border: Border.all(width: 0.7, color: AppColors.primary),
             child: Text(

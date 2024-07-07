@@ -15,64 +15,44 @@ class KeySkills extends StatelessWidget {
     return OutlinedContainer(
       title: 'Key Skills',
       child: Wrap(runSpacing: 10, children: [
-        RoundedContainer(
-            radius: 16,
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3.0),
-            border: Border.all(width: 0.5, color: AppColors.primary),
-            child: Text('UI/UX',
-                style: TextStyle(
-                    fontSize: 10.0,
-                    fontWeight: FontWeight.w400,
-                    color: AppColors.primary))),
-        const SizedBox(
-          width: Sizes.sm,
+        const SkillsChild(skill: 'UI/UX',),
+         SizedBox(
+          width: Sizes.responsiveSm(context),
         ),
-        RoundedContainer(
-            radius: 16,
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3.0),
-            border: Border.all(width: 0.5, color: AppColors.primary),
-            child: Text('Frontend',
-                style: TextStyle(
-                    fontSize: 10.0,
-                    fontWeight: FontWeight.w400,
-                    color: AppColors.primary))),
-        const SizedBox(
-          width: Sizes.sm,
+        const SkillsChild(skill: 'Frontend',),
+        SizedBox(
+          width: Sizes.responsiveSm(context),
         ),
-        RoundedContainer(
-            radius: 16,
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3.0),
-            border: Border.all(width: 0.5, color: AppColors.primary),
-            child: Text('Backend',
-                style: TextStyle(
-                    fontSize: 10.0,
-                    fontWeight: FontWeight.w400,
-                    color: AppColors.primary))),
-        const SizedBox(
-          width: Sizes.sm,
+        const SkillsChild(skill: 'Backend',),
+        SizedBox(
+          width: Sizes.responsiveSm(context),
         ),
-        RoundedContainer(
-            radius: 16,
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3.0),
-            border: Border.all(width: 0.5, color: AppColors.primary),
-            child: Text('Flutter',
-                style: TextStyle(
-                    fontSize: 10.0,
-                    fontWeight: FontWeight.w400,
-                    color: AppColors.primary))),
-        const SizedBox(
-          width: Sizes.sm,
+        const SkillsChild(skill: 'Flutter',),
+        SizedBox(
+          width: Sizes.responsiveSm(context),
         ),
-        RoundedContainer(
-            radius: 16,
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3.0),
-            border: Border.all(width: 0.5, color: AppColors.primary),
-            child: Text('Javascript',
-                style: TextStyle(
-                    fontSize: 10.0,
-                    fontWeight: FontWeight.w400,
-                    color: AppColors.primary))),
+        const SkillsChild(skill: 'Javascript',),
       ]),
     );
+  }
+}
+
+class SkillsChild extends StatelessWidget {
+  const SkillsChild({
+    super.key, required this.skill,
+  });
+
+  final String skill;
+  @override
+  Widget build(BuildContext context) {
+    return RoundedContainer(
+        radius: 16,
+        padding:  EdgeInsets.symmetric(horizontal: Sizes.responsiveHorizontalSpace(context), vertical: Sizes.responsiveVerticalSpace(context)),
+        border: Border.all(width: 0.5, color: AppColors.primary),
+        child: Text(skill,
+            style: TextStyle(
+                fontSize: 10.0,
+                fontWeight: FontWeight.w400,
+                color: AppColors.primary)));
   }
 }

@@ -4,13 +4,11 @@ import 'package:percent_indicator/circular_percent_indicator.dart';
 import '../constants/AppSizes.dart';
 import '../constants/colors.dart';
 
-
 class ProfileStatusSection extends StatelessWidget {
   const ProfileStatusSection({super.key});
 
   final percent = 0.25;
   final showPercent = .25 * 100;
-
 
   @override
   Widget build(BuildContext context) {
@@ -25,17 +23,18 @@ class ProfileStatusSection extends StatelessWidget {
             progressColor: AppColors.green,
             backgroundColor: Colors.transparent,
           ),
-          const SizedBox(
-            height: Sizes.md,
+          SizedBox(
+            height: Sizes.responsiveMd(context),
           ),
-          Text('Harsh Pawar',
-              style: Theme.of(context).textTheme.headlineSmall),
-          const SizedBox(
-            height: Sizes.sm,
+          Text('Harsh Pawar', style: Theme.of(context).textTheme.headlineSmall),
+          SizedBox(
+            height: Sizes.responsiveSm(context),
           ),
           Container(
-            padding: const EdgeInsets.symmetric(
-                vertical: 3.0, horizontal: 6.0),
+            padding: EdgeInsets.symmetric(
+              vertical: Sizes.responsiveVerticalSpace(context),
+              horizontal: Sizes.responsiveHorizontalSpace(context),
+            ),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
                 border: Border.all(
@@ -47,11 +46,11 @@ class ProfileStatusSection extends StatelessWidget {
               children: [
                 Image.asset(
                   'assets/icons/verifiedIcon.png',
-                  height: 10,
-                  width: 10,
+                  height: MediaQuery.of(context).size.width * 0.025,
+                  width: MediaQuery.of(context).size.width * 0.025,
                 ),
-                const SizedBox(
-                  width: Sizes.xs,
+                 SizedBox(
+                  width: Sizes.responsiveXs(context),
                 ),
                 Text(
                   'Not verified',
@@ -64,8 +63,8 @@ class ProfileStatusSection extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(
-            height: Sizes.sm,
+           SizedBox(
+            height: Sizes.responsiveSm(context),
           ),
           Text('Last updated today',
               style: TextStyle(

@@ -53,22 +53,22 @@ class ExperienceChild extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(title,style: const TextStyle(
-              fontSize: 9,
+              fontSize: 9.5,
               fontWeight: FontWeight.w500,
             ),),
-            const SizedBox(height: Sizes.xs,),
+             SizedBox(height: Sizes.responsiveXs(context),),
             Text(jobType,style: const TextStyle(
-              fontSize: 6,
+              fontSize: 6.5,
               fontWeight: FontWeight.w400,
             ),),
-            const SizedBox(height: Sizes.xxs,),
+            SizedBox(height: Sizes.responsiveXxs(context),),
             Text(company,style: const TextStyle(
-              fontSize: 6,
+              fontSize: 6.5,
               fontWeight: FontWeight.w400,
             ),),
-            const SizedBox(height: Sizes.xxs,),
+            SizedBox(height: Sizes.responsiveXxs(context),),
             Text(timing,style: TextStyle(
-              fontSize: 6,
+              fontSize: 6.5,
               fontWeight: FontWeight.w500,
               color: AppColors.secondaryText,
             ),),

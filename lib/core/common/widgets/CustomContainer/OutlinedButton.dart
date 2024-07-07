@@ -16,7 +16,7 @@ class OutlinedContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(Sizes.defaultPadding),
+      padding:  EdgeInsets.all(Sizes.responsiveDefaultSpace(context)),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(Sizes.sm),
           border: Border.all(width: 0.5,color: AppColors.secondaryText)
@@ -32,7 +32,7 @@ class OutlinedContainer extends StatelessWidget {
               Image.asset('assets/icons/img_3.png',height: 16,width: 16,),
             ],
           ),
-          const SizedBox(height: Sizes.md,),
+           SizedBox(height: Sizes.responsiveMd(context)),
           child
         ],
       )

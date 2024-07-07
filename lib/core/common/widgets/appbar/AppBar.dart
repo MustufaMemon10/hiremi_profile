@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:hiremi_profile/core/utils/constants/AppSizes.dart';
 
 import '../../../utils/constants/colors.dart';
 
@@ -22,10 +23,10 @@ class SAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       automaticallyImplyLeading: false,
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.white,
       leading:
       Container(
-          padding: const EdgeInsets.all(8),
+          padding:  EdgeInsets.all(Sizes.responsiveXs(context)),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8.0),
             color: AppColors.bgBlue,

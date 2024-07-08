@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:hiremi_profile/core/common/widgets/appbar/AppBar.dart';
 import 'package:hiremi_profile/core/utils/constants/AppSizes.dart';
 import 'package:hiremi_profile/core/utils/constants/colors.dart';
-import 'package:hiremi_profile/core/utils/widgets/ProfileStatusSection.dart';
-import 'package:hiremi_profile/core/utils/widgets/Projects.dart';
-import '../../core/utils/widgets/BasicDetails.dart';
-import '../../core/utils/widgets/Education.dart';
-import '../../core/utils/widgets/Experience.dart';
-import '../../core/utils/widgets/KeySkills.dart';
-import '../../core/utils/widgets/ProfileSummary.dart';
-import '../../core/utils/widgets/text_widgets/Languages.dart';
-import '../../core/utils/widgets/text_widgets/PersonalInfo.dart';
-import '../../core/utils/widgets/text_widgets/PersonalLinks.dart';
+import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/BasicDetails.dart';
+import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/Education.dart';
+import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/Experience.dart';
+import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/KeySkills.dart';
+import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/Languages.dart';
+import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/PersonalInfo.dart';
+import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/PersonalLinks.dart';
+import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/ProfileStatusSection.dart';
+import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/ProfileSummary.dart';
+import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/Projects.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -30,7 +30,7 @@ class ProfileScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SAppbar(),
+              const SAppbar(title: 'Profile',),
               SizedBox(
                 height: Sizes.responsiveXxl(context),
               ),

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../common/widgets/CustomContainer/OutlinedButton.dart';
-import '../constants/AppSizes.dart';
-import '../constants/colors.dart';
-
+import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';
+import '../../../core/utils/constants/AppSizes.dart';
+import '../../../core/utils/constants/colors.dart';
 
 class Experience extends StatelessWidget {
   const Experience({

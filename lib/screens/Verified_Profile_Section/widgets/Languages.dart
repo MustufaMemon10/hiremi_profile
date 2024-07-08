@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../common/widgets/CustomContainer/OutlinedButton.dart';
-import '../../../common/widgets/RoundedContainer/roundedContainer.dart';
-import '../../constants/AppSizes.dart';
-import '../../constants/colors.dart';
-
+import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';
+import '../../../core/common/widgets/RoundedContainer/roundedContainer.dart';
+import '../../../core/utils/constants/AppSizes.dart';
+import '../../../core/utils/constants/colors.dart';
 
 
 class Languages extends StatelessWidget {
@@ -18,7 +17,7 @@ class Languages extends StatelessWidget {
       showEdit: false,
       title: 'Languages',
       child: Wrap(
-        runSpacing: 10,
+        crossAxisAlignment: WrapCrossAlignment.center,
         children: <Widget>[
           RoundedContainer(
             radius: Sizes.radiusMd,

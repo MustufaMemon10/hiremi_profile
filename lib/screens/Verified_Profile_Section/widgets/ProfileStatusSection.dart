@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
-import '../constants/AppSizes.dart';
-import '../constants/colors.dart';
+import '../../../core/utils/constants/AppSizes.dart';
+import '../../../core/utils/constants/colors.dart';
 
 class ProfileStatusSection extends StatelessWidget {
   const ProfileStatusSection({super.key});
@@ -39,13 +39,13 @@ class ProfileStatusSection extends StatelessWidget {
                 borderRadius: BorderRadius.circular(50),
                 border: Border.all(
                   width: 0.7,
-                  color: AppColors.primary,
+                  color: AppColors.green,
                 )),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Image.asset(
-                  'assets/icons/verifiedIcon.png',
+                  'assets/icons/verified.png',
                   height: MediaQuery.of(context).size.width * 0.025,
                   width: MediaQuery.of(context).size.width * 0.025,
                 ),
@@ -53,9 +53,9 @@ class ProfileStatusSection extends StatelessWidget {
                   width: Sizes.responsiveXs(context),
                 ),
                 Text(
-                  'Not verified',
+                  'Verified',
                   style: TextStyle(
-                    color: AppColors.primary,
+                    color: AppColors.green,
                     fontWeight: FontWeight.bold,
                     fontSize: 10,
                   ),

@@ -3,10 +3,9 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:hiremi_profile/core/common/widgets/CustomContainer/OutlinedButton.dart';
 
-import '../../../common/widgets/RoundedContainer/roundedContainer.dart';
-import '../../constants/AppSizes.dart';
-import '../../constants/colors.dart';
-
+import '../../../core/common/widgets/RoundedContainer/roundedContainer.dart';
+import '../../../core/utils/constants/AppSizes.dart';
+import '../../../core/utils/constants/colors.dart';
 
 class PersonalLinks extends StatelessWidget {
   const PersonalLinks({
@@ -65,9 +64,9 @@ class PersonalLinks extends StatelessWidget {
                           .labelMedium!
                           .apply(color: AppColors.white),
                     ),
-                    Icon(
+                    const Icon(
                       Icons.arrow_forward_ios_sharp,
-                      size: Sizes.responsiveMdSm(context),
+                      size: 8,
                       color: AppColors.white,
                     )
                   ],

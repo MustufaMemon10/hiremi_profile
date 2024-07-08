@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../../common/widgets/CustomContainer/OutlinedButton.dart';
-import '../../common/widgets/RoundedContainer/roundedContainer.dart';
-import '../constants/AppSizes.dart';
-import '../constants/colors.dart';
+import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';
+import '../../../core/common/widgets/RoundedContainer/roundedContainer.dart';
+import '../../../core/utils/constants/AppSizes.dart';
+import '../../../core/utils/constants/colors.dart';
+
 
 class Projects extends StatelessWidget {
   const Projects({

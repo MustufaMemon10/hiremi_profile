@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:hiremi_profile/core/utils/constants/AppSizes.dart';
 
@@ -7,13 +6,13 @@ import '../../../utils/constants/colors.dart';
 class SAppbar extends StatelessWidget implements PreferredSizeWidget {
   const SAppbar(
       {super.key,
-        this.title,
-        this.showBackArrow = false,
-        this.leadingIcon,
-        this.actions,
-        this.leadingOnPressed});
+      this.title,
+      this.showBackArrow = false,
+      this.leadingIcon,
+      this.actions,
+      this.leadingOnPressed});
 
-  final Widget? title;
+  final String? title;
   final bool showBackArrow;
   final IconData? leadingIcon;
   final List<Widget>? actions;
@@ -24,22 +23,40 @@ class SAppbar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       automaticallyImplyLeading: false,
       backgroundColor: Colors.white,
-      leading:
-      Container(
-          padding:  EdgeInsets.all(Sizes.responsiveXs(context)),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8.0),
-            color: AppColors.bgBlue,
-          ),
-          child: const Icon(Icons.menu)),
-      title: Text('Profile',style: Theme.of(context).textTheme.headlineSmall,),
+      leading: Padding(
+        padding: EdgeInsets.only(left: Sizes.responsiveDefaultSpace(context),top: Sizes.responsiveSm(context),bottom: Sizes.responsiveSm(context)),
+        child: Container(
+            padding: EdgeInsets.all(Sizes.responsiveSm(context)),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8.0),
+              color: AppColors.bgBlue,
+            ),
+            child: const Icon(
+              Icons.menu,
+              size: 22,
+            )),
+      ),
+      title: Text(
+        title!,
+        style: Theme.of(context).textTheme.headlineSmall,
+      ),
       centerTitle: true,
-      actions: [Container(
-        decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: AppColors.bgBlue,
+      actions: [
+        Padding(
+          padding: EdgeInsets.only(right: Sizes.responsiveDefaultSpace(context)),
+          child: Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: AppColors.bgBlue,
+              ),
+              child: Center(
+                child: IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.notifications_outlined),
+                ),
+              )),
         ),
-        child: Center(child:IconButton(onPressed: (){},icon: const Icon(Icons.notifications_outlined),),)),],
+      ],
     );
   }
 

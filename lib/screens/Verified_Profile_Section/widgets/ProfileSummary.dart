@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../common/widgets/CustomContainer/OutlinedButton.dart';
-import '../constants/colors.dart';
+import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';
+import '../../../core/utils/constants/colors.dart';
 
 
 class ProfileSummary extends StatelessWidget {

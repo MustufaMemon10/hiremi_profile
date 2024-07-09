@@ -15,6 +15,7 @@ class Languages extends StatelessWidget {
   Widget build(BuildContext context) {
     return OutlinedContainer(
       showEdit: false,
+      onTap: (){},
       title: 'Languages',
       child: Wrap(
         crossAxisAlignment: WrapCrossAlignment.center,

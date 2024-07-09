@@ -11,9 +11,10 @@ class PersonalInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const OutlinedContainer(
+    return  OutlinedContainer(
+      onTap: (){},
       title: 'Personal Details',
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           PersonalInfoChild(

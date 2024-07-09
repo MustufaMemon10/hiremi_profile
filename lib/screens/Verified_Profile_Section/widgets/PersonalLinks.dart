@@ -15,6 +15,7 @@ class PersonalLinks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedContainer(
+      onTap: (){},
       showEdit: false,
       title: 'Add Links',
       child: Column(

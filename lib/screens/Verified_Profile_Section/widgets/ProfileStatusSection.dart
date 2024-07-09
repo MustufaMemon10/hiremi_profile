@@ -15,13 +15,16 @@ class ProfileStatusSection extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          CircularPercentIndicator(
-            radius: 40,
-            lineWidth: 6,
-            percent: percent,
-            center: Text('$showPercent%'),
-            progressColor: AppColors.green,
-            backgroundColor: Colors.transparent,
+          Container(
+            padding: EdgeInsets.all(Sizes.responsiveLg(context)),
+            decoration: BoxDecoration(
+                color: AppColors.lightPrimary,
+                shape: BoxShape.circle,
+                border: Border.all(width: 5, color: AppColors.green)),
+            child: Icon(
+              Icons.person,
+              color: AppColors.primary,
+            ),
           ),
           SizedBox(
             height: Sizes.responsiveMd(context),
@@ -49,7 +52,7 @@ class ProfileStatusSection extends StatelessWidget {
                   height: MediaQuery.of(context).size.width * 0.025,
                   width: MediaQuery.of(context).size.width * 0.025,
                 ),
-                 SizedBox(
+                SizedBox(
                   width: Sizes.responsiveXs(context),
                 ),
                 Text(
@@ -63,7 +66,7 @@ class ProfileStatusSection extends StatelessWidget {
               ],
             ),
           ),
-           SizedBox(
+          SizedBox(
             height: Sizes.responsiveSm(context),
           ),
           Text('Last updated today',

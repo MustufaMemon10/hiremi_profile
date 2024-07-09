@@ -13,6 +13,7 @@ class Experience extends StatelessWidget {
   Widget build(BuildContext context) {
     return  OutlinedContainer(
       title: 'Experience',
+      onTap: (){},
       child:
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,

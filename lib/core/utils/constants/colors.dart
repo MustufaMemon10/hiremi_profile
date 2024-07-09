@@ -14,7 +14,7 @@ class AppColors{
   static Color green = HexColor('#34AD78');
   static Color bgBlue = HexColor("#ECF5FF");
   static Color lightGrey = HexColor('#F3F3F3');
-
+  static Color lightPrimary = HexColor('#FBEEEE');
   
   
   /// background Colors

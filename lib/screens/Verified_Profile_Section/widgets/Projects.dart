@@ -14,6 +14,7 @@ class Projects extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedContainer(
+      onTap: (){},
       title: 'Projects',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

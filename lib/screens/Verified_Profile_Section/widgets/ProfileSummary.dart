@@ -6,18 +6,24 @@ import '../../../core/utils/constants/colors.dart';
 
 class ProfileSummary extends StatelessWidget {
   const ProfileSummary({
-    super.key,
+    super.key, required this.summary,
   });
 
+  bool isValid (){
+    return summary.isNotEmpty;
+  }
+  final String summary;
   @override
   Widget build(BuildContext context) {
-    return const OutlinedContainer(
+    return  OutlinedContainer(
+      onTap: (){},
       title: 'Profile Summary',
+      isTrue: isValid(),
       child: Column(
         children: [
           Text(
-              'I’m a fresher and looking for internships, I\'ve a skillset including Web Development from frontend work to backend work, Development from frontend work to backend work.',
-              style: TextStyle(
+              summary,
+              style: const TextStyle(
                 fontSize: 9.0,
                 fontWeight: FontWeight.w500,
                 color: AppColors.black,

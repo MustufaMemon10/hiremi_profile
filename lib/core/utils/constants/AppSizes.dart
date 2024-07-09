@@ -82,5 +82,11 @@ class Sizes {
   static double responsiveSpaceBetweenSections(BuildContext context) {
     return MediaQuery.of(context).size.height * 0.05;
   }
+  static double screenHeight(BuildContext context){
+    return MediaQuery.of(context).size.height ;
+  }
+  static double screenWidth(BuildContext context){
+    return MediaQuery.of(context).size.width ;
+  }
 
 }

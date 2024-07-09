@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hiremi_profile/Navigation.dart';
 import 'package:hiremi_profile/core/utils/theme/text_theme/text_theme.dart';
-import 'package:hiremi_profile/screens/Job_Details_Section/Freshers_Jobs/Fresher_Jobs.dart';
-import 'package:hiremi_profile/screens/Verified_Profile_Section/ProfileScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +20,7 @@ class MyApp extends StatelessWidget {
         fontFamily: GoogleFonts.poppins().fontFamily,
         useMaterial3: true,
       ),
-      home:  ProfileScreen(),
+      home:  const NewNavbar(isV: true,),
     );
   }
 }

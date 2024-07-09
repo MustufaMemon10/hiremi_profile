@@ -37,7 +37,7 @@ class ResumeSection extends StatelessWidget {
                       children: [
                         Text(
                           'Resume Url',
-                          style: const TextStyle(
+                          style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 16),
                         ),

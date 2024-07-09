@@ -14,6 +14,8 @@ import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/ProfileS
 import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/Projects.dart';
 import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/ResumeSection.dart';
 
+import '../../models/UserModel.dart';
+
 class ProfileScreen extends StatelessWidget {
    ProfileScreen({super.key});
 

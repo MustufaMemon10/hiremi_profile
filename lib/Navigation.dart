@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hiremi_profile/screens/Edit_Profile_Section/BasicDetails/AddBasicDetails.dart';
+import 'package:hiremi_profile/screens/Verified_Profile_Section/ProfileScreen.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class NewNavbar extends StatefulWidget {
@@ -19,10 +20,10 @@ class _NewNavbarState extends State<NewNavbar> {
   void initState() {
     super.initState();
     _pages = [
-      const AddBasicDetails(),
-      const AddBasicDetails(),
-      const AddBasicDetails(),
-      const AddBasicDetails(),
+       ProfileScreen(),
+       ProfileScreen(),
+       ProfileScreen(),
+       ProfileScreen(),
     ];
   }
 

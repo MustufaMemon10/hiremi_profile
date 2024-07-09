@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hiremi_profile/models/UserModel.dart';
 import 'package:hiremi_profile/screens/Edit_Profile_Section/BasicDetails/AddBasicDetails.dart';
 
 import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';
@@ -30,7 +31,7 @@ class BasicDetails extends StatelessWidget {
     return OutlinedContainer(
       onTap: () =>
           Navigator.of(context).push(MaterialPageRoute(
-              builder: (ctx) =>  const AddBasicDetails())),
+              builder: (context) =>  const AddBasicDetails())),
       title: 'Basic Details',
       isTrue: isAllFieldValid(),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [

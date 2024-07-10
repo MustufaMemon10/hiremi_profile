@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hiremi_profile/screens/Edit_Profile_Section/Projects/AddProjects.dart';
 
 import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';
 import '../../../core/common/widgets/RoundedContainer/roundedContainer.dart';
@@ -14,7 +15,9 @@ class Projects extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedContainer(
-      onTap: (){},
+      onTap: () =>
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) =>  const AddProjects())),
       title: 'Projects',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,21 +63,21 @@ class ProjectsChild extends StatelessWidget {
       children: [
         Text(
           title,
-          style: Theme.of(context).textTheme.labelLarge,
+          style: const TextStyle(fontSize: 9.0,fontWeight: FontWeight.w500,color: Colors.black),
         ),
         SizedBox(
           height: Sizes.responsiveXs(context),
         ),
         Text(
           duration,
-          style: Theme.of(context).textTheme.labelSmall,
+          style:  TextStyle(fontSize: 6.0,fontWeight: FontWeight.w500,color: AppColors.secondaryText)
         ),
         SizedBox(
           height: Sizes.responsiveSm(context),
         ),
         Text(
           description,
-          style: Theme.of(context).textTheme.labelLarge,
+          style: const TextStyle(fontSize: 9.0,fontWeight: FontWeight.w500,color: Colors.black),
         ),
          SizedBox(
           height: Sizes.responsiveSm(context),

@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hiremi_profile/screens/Edit_Profile_Section/Education/AddEducation.dart';
-import 'package:hiremi_profile/screens/Edit_Profile_Section/ProfileSummary/ProfileSummary.dart';
 
 import '../../../core/common/widgets/appbar/AppBar.dart';
 import '../../../core/utils/constants/AppSizes.dart';
 import '../../../core/utils/constants/colors.dart';
 import '../../Verified_Profile_Section/ProfileScreen.dart';
-import '../../Verified_Profile_Section/widgets/ProfileSummary.dart';
 import '../widgets/CustomTextField.dart';
 
 class AddKeySkills extends StatelessWidget {

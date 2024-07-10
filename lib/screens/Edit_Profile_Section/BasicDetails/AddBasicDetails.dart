@@ -17,11 +17,11 @@ class AddBasicDetails extends StatefulWidget {
 
 class _AddBasicDetailsState extends State<AddBasicDetails> {
   String opportunity = '';
-  final cityController = TextEditingController();
-  final stateController = TextEditingController();
-  final emailController = TextEditingController();
-  final phoneController = TextEditingController();
-  final whatsappController = TextEditingController();
+   TextEditingController cityController = TextEditingController();
+   TextEditingController stateController = TextEditingController();
+   TextEditingController emailController = TextEditingController();
+   TextEditingController phoneController = TextEditingController();
+   TextEditingController whatsappController = TextEditingController();
 
   bool isAllFieldFilled ()  {
     return opportunity.isNotEmpty && cityController.text.isNotEmpty && stateController.text.isNotEmpty && emailController.text.isNotEmpty && phoneController.text.isNotEmpty && whatsappController.text.isNotEmpty;

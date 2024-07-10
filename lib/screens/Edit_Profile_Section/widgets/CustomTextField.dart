@@ -7,14 +7,15 @@ import '../../../core/utils/constants/colors.dart';
 class CustomTextField extends StatelessWidget {
   const CustomTextField({
     super.key,
-    required this.controller, required this.hintText, this.textInputType = TextInputType.text,  this.isLarge =false,  this.suffix,
+    required this.controller, required this.hintText, this.textInputType = TextInputType.text,  this.maxLines,  this.suffix, this.prefix,
   });
 
   final TextEditingController controller;
   final String hintText;
   final TextInputType textInputType;
-  final bool isLarge;
+  final int? maxLines;
   final Widget? suffix;
+  final Widget? prefix;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class CustomTextField extends StatelessWidget {
       controller: controller,
       cursorColor: AppColors.black,
       textAlign: TextAlign.start,
-      maxLines: isLarge ?3 : 1,
+      maxLines: maxLines,
       style: const TextStyle(
         fontSize: 12,
         fontWeight: FontWeight.w500,
@@ -32,6 +33,7 @@ class CustomTextField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hintText,
         suffixIcon: suffix,
+        prefixIcon: prefix,
         suffixIconColor: AppColors.secondaryText,
         contentPadding: EdgeInsets.symmetric(
             vertical: Sizes.responsiveSm(context),

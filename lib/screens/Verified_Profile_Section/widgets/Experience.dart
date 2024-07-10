@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hiremi_profile/screens/Edit_Profile_Section/Experience/AddExperience.dart';
 
 import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';
 import '../../../core/utils/constants/AppSizes.dart';
@@ -13,7 +14,9 @@ class Experience extends StatelessWidget {
   Widget build(BuildContext context) {
     return  OutlinedContainer(
       title: 'Experience',
-      onTap: (){},
+      onTap: () =>
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) =>  const AddExperience())),
       child:
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,

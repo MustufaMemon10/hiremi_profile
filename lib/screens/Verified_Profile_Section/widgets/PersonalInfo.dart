@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';
 import '../../../core/utils/constants/AppSizes.dart';
 import '../../../core/utils/constants/colors.dart';
+import '../../Edit_Profile_Section/Personal Details/AddPersonalDetails.dart';
 
 class PersonalInfo extends StatelessWidget {
   const PersonalInfo({
@@ -12,7 +13,9 @@ class PersonalInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  OutlinedContainer(
-      onTap: (){},
+      onTap: () =>
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) =>  const AddPersonalDetails())),
       title: 'Personal Details',
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,

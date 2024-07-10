@@ -3,7 +3,6 @@ import 'package:hiremi_profile/core/common/widgets/appbar/AppBar.dart';
 import 'package:hiremi_profile/core/utils/constants/AppSizes.dart';
 import 'package:hiremi_profile/screens/Edit_Profile_Section/Key%20Skills/AddKeySkills.dart';
 import 'package:hiremi_profile/screens/Edit_Profile_Section/widgets/CustomTextField.dart';
-import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/KeySkills.dart';
 
 import '../../../core/utils/constants/colors.dart';
 import '../../Verified_Profile_Section/ProfileScreen.dart';
@@ -58,7 +57,7 @@ class AddProfileSummary extends StatelessWidget {
             CustomTextField(
               controller: summaryController,
               hintText: 'Tell us about yourself...',
-              isLarge: true,
+              maxLines: 3,
             ),
             SizedBox(
               height: Sizes.responsiveXs(context),

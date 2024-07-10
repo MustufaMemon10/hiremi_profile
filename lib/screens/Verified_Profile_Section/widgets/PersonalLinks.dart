@@ -15,7 +15,6 @@ class PersonalLinks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedContainer(
-      onTap: (){},
       showEdit: false,
       title: 'Add Links',
       child: Column(
@@ -43,7 +42,6 @@ class PersonalLinks extends StatelessWidget {
             height: Sizes.responsiveMd(context),
           ),
           SizedBox(
-            width: Sizes.responsiveXxl(context) * 1.8,
             height: Sizes.responsiveLg(context) * 1.06,
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
@@ -53,10 +51,11 @@ class PersonalLinks extends StatelessWidget {
                       borderRadius: BorderRadius.circular(Sizes.radiusXs),
                     ),
                     padding: EdgeInsets.symmetric(
-                        vertical: Sizes.responsiveHorizontalSpace(context),
+                        vertical: Sizes.responsiveVerticalSpace(context),
                         horizontal: Sizes.responsiveMdSm(context))),
                 onPressed: () {},
                 child: Row(
+                  mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     Text(
                       'Add Links ',

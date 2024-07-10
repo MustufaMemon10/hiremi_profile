@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hiremi_profile/models/UserModel.dart';
 import 'package:hiremi_profile/screens/Edit_Profile_Section/BasicDetails/AddBasicDetails.dart';
 
 import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';

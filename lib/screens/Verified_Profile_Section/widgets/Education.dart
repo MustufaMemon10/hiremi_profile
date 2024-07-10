@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hiremi_profile/screens/Edit_Profile_Section/Education/AddEducation.dart';
 
 import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';
 import '../../../core/utils/constants/AppSizes.dart';
@@ -19,7 +20,9 @@ class Education extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedContainer(
-      onTap: (){},
+      onTap: () =>
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) =>   AddEducation())),
       title: 'Education',
       isTrue: isValid(),
       child: Column(

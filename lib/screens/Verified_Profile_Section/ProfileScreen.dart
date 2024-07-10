@@ -14,7 +14,6 @@ import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/ProfileS
 import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/Projects.dart';
 import 'package:hiremi_profile/screens/Verified_Profile_Section/widgets/ResumeSection.dart';
 
-import '../../models/UserModel.dart';
 
 class ProfileScreen extends StatelessWidget {
    ProfileScreen({super.key});
@@ -50,7 +49,7 @@ class ProfileScreen extends StatelessWidget {
               left: Sizes.responsiveDefaultSpace(context),
               right: Sizes.responsiveDefaultSpace(context),
               top: Sizes.responsiveDefaultSpace(context),
-              bottom: kToolbarHeight),
+              bottom: Sizes.responsiveXxl(context)* 2.5),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

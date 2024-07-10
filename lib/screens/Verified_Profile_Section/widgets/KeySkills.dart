@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hiremi_profile/screens/Edit_Profile_Section/Key%20Skills/AddKeySkills.dart';
 
 import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';
 import '../../../core/common/widgets/RoundedContainer/roundedContainer.dart';
@@ -20,7 +21,9 @@ class KeySkills extends StatelessWidget {
   Widget build(BuildContext context) {
     return OutlinedContainer(
       title: 'Key Skills',
-      onTap: (){},
+      onTap: () =>
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) =>  AddKeySkills())),
       isTrue: isValid(),
       child: Wrap(
           runSpacing: 10,

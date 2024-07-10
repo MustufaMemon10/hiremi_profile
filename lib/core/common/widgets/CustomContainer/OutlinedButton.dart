@@ -7,16 +7,17 @@ import '../../../utils/constants/colors.dart';
 class OutlinedContainer extends StatelessWidget {
   const OutlinedContainer({
     super.key, required this.child, required this.title,
-    this.showEdit = true,  this.isTrue = false, required this.onTap,
+    this.showEdit = true,  this.isTrue = true,  this.onTap,
   });
 
   final Widget child;
   final String title;
   final bool showEdit,isTrue;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      splashColor: AppColors.secondaryText,
       onTap: onTap,
       child: Container(
         padding:  EdgeInsets.all(Sizes.responsiveDefaultSpace(context)),

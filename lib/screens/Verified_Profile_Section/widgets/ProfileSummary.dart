@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hiremi_profile/screens/Edit_Profile_Section/ProfileSummary/ProfileSummary.dart';
 
 import '../../../core/common/widgets/CustomContainer/OutlinedButton.dart';
 import '../../../core/utils/constants/colors.dart';
@@ -16,7 +17,9 @@ class ProfileSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  OutlinedContainer(
-      onTap: (){},
+      onTap: () =>
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) =>   AddProfileSummary())),
       title: 'Profile Summary',
       isTrue: isValid(),
       child: Column(

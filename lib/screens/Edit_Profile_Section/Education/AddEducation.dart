@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hiremi_profile/screens/Edit_Profile_Section/Experience/AddExperience.dart';
-import 'package:hiremi_profile/screens/Edit_Profile_Section/ProfileSummary/ProfileSummary.dart';
 import 'package:hiremi_profile/screens/Edit_Profile_Section/widgets/CustomTextField.dart';
 import 'package:hiremi_profile/screens/Verified_Profile_Section/ProfileScreen.dart';
 
@@ -11,11 +10,10 @@ import '../../../core/utils/constants/colors.dart';
 class AddEducation extends StatelessWidget {
   AddEducation({super.key});
 
-  final educationController = TextEditingController();
-  final courseController = TextEditingController();
-  final yearController = TextEditingController();
-  final marksController = TextEditingController();
-
+  TextEditingController educationController = TextEditingController();
+  TextEditingController courseController = TextEditingController();
+  TextEditingController yearController = TextEditingController();
+  TextEditingController marksController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

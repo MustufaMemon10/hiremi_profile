@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hiremi_profile/screens/Edit_Profile_Section/BasicDetails/AddBasicDetails.dart';
+import 'package:hiremi_profile/screens/Edit_Profile_Section/ProfileSummary/ProfileSummary.dart';
 import 'package:hiremi_profile/screens/Verified_Profile_Section/ProfileScreen.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
@@ -20,7 +20,7 @@ class _NewNavbarState extends State<NewNavbar> {
   void initState() {
     super.initState();
     _pages = [
-       ProfileScreen(),
+       AddProfileSummary(),
        ProfileScreen(),
        ProfileScreen(),
        ProfileScreen(),

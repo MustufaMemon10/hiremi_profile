@@ -3,6 +3,7 @@ import 'package:hiremi_profile/core/common/widgets/appbar/AppBar.dart';
 import 'package:hiremi_profile/core/utils/constants/colors.dart';
 import 'package:hiremi_profile/models/UserModel.dart';
 import 'package:hiremi_profile/screens/Edit_Profile_Section/ProfileSummary/ProfileSummary.dart';
+import 'package:hiremi_profile/screens/Edit_Profile_Section/widgets/CustomTextField.dart';
 import 'package:hiremi_profile/screens/Verified_Profile_Section/ProfileScreen.dart';
 
 import '../../../core/utils/constants/AppSizes.dart';
@@ -137,6 +138,7 @@ class _AddBasicDetailsState extends State<AddBasicDetails> {
                   ],
                 ),
               ),
+
               SizedBox(
                 height: Sizes.responsiveMd(context),
               ),
@@ -164,53 +166,7 @@ class _AddBasicDetailsState extends State<AddBasicDetails> {
                         SizedBox(
                           height: Sizes.responsiveSm(context),
                         ),
-                        TextField(
-                          controller: cityController,
-                          cursorColor: AppColors.black,
-                          textAlign: TextAlign.start,
-                          style: const TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                          ),
-                          expands: false,
-                          decoration: InputDecoration(
-                            hintText: 'City',
-                            labelStyle: const TextStyle(
-                              fontSize: 8.5,
-                              fontWeight: FontWeight.w500,
-                            ),
-                            contentPadding: EdgeInsets.symmetric(
-                                vertical: Sizes.responsiveSm(context),
-                                horizontal: Sizes.responsiveLg(context)),
-                            alignLabelWithHint: true,
-                            hintStyle: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
-                              color: AppColors.secondaryText,
-                            ),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(3),
-                              borderSide: const BorderSide(
-                                color: AppColors.black,
-                                width: 0.37,
-                              ),
-                            ),
-                            enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(3),
-                              borderSide: const BorderSide(
-                                color: AppColors.black,
-                                width: 0.37,
-                              ),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(3),
-                              borderSide: const BorderSide(
-                                color: AppColors.black,
-                                width: 0.37,
-                              ),
-                            ),
-                          ),
-                        ),
+                        CustomTextField(controller: cityController, hintText: 'City')
                       ],
                     ),
                   ),
@@ -239,53 +195,7 @@ class _AddBasicDetailsState extends State<AddBasicDetails> {
                         SizedBox(
                           height: Sizes.responsiveSm(context),
                         ),
-                        TextField(
-                          controller: stateController,
-                          cursorColor: AppColors.black,
-                          textAlign: TextAlign.start,
-                          style: const TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                          ),
-                          expands: false,
-                          decoration: InputDecoration(
-                            hintText: 'State',
-                            labelStyle: const TextStyle(
-                              fontSize: 8.5,
-                              fontWeight: FontWeight.w500,
-                            ),
-                            contentPadding: EdgeInsets.symmetric(
-                                vertical: Sizes.responsiveSm(context),
-                                horizontal: Sizes.responsiveLg(context)),
-                            alignLabelWithHint: true,
-                            hintStyle: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
-                              color: AppColors.secondaryText,
-                            ),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(3),
-                              borderSide: BorderSide(
-                                color: AppColors.secondaryText,
-                                width: 0.37,
-                              ),
-                            ),
-                            enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(3),
-                              borderSide: BorderSide(
-                                color: AppColors.secondaryText,
-                                width: 0.37,
-                              ),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(3),
-                              borderSide: BorderSide(
-                                color: AppColors.secondaryText,
-                                width: 0.37,
-                              ),
-                            ),
-                          ),
-                        ),
+                        CustomTextField(controller: stateController,hintText: 'State',),
                       ],
                     ),
                   )
@@ -314,53 +224,7 @@ class _AddBasicDetailsState extends State<AddBasicDetails> {
                   SizedBox(
                     height: Sizes.responsiveSm(context),
                   ),
-                  TextField(
-                    controller: emailController,
-                    cursorColor: AppColors.black,
-                    textAlign: TextAlign.start,
-                    style: const TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                    ),
-                    expands: false,
-                    decoration: InputDecoration(
-                      hintText: 'Email',
-                      labelStyle: const TextStyle(
-                        fontSize: 8.5,
-                        fontWeight: FontWeight.w500,
-                      ),
-                      contentPadding: EdgeInsets.symmetric(
-                          vertical: Sizes.responsiveSm(context),
-                          horizontal: Sizes.responsiveLg(context)),
-                      alignLabelWithHint: true,
-                      hintStyle: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.secondaryText,
-                      ),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(3),
-                        borderSide: const BorderSide(
-                          color: AppColors.black,
-                          width: 0.37,
-                        ),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(3),
-                        borderSide: const BorderSide(
-                          color: AppColors.black,
-                          width: 0.37,
-                        ),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(3),
-                        borderSide: const BorderSide(
-                          color: AppColors.black,
-                          width: 0.37,
-                        ),
-                      ),
-                    ),
-                  ),
+                 CustomTextField(controller: emailController, hintText: 'abc@gmail.com')
                 ],
               ),
               SizedBox(
@@ -386,53 +250,7 @@ class _AddBasicDetailsState extends State<AddBasicDetails> {
                   SizedBox(
                     height: Sizes.responsiveSm(context),
                   ),
-                  TextField(
-                    controller: phoneController,
-                    cursorColor: AppColors.black,
-                    textAlign: TextAlign.start,
-                    style: const TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                    ),
-                    expands: false,
-                    decoration: InputDecoration(
-                      hintText: 'Phone Number',
-                      labelStyle: const TextStyle(
-                        fontSize: 8.5,
-                        fontWeight: FontWeight.w500,
-                      ),
-                      contentPadding: EdgeInsets.symmetric(
-                          vertical: Sizes.responsiveSm(context),
-                          horizontal: Sizes.responsiveLg(context)),
-                      alignLabelWithHint: true,
-                      hintStyle: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.secondaryText,
-                      ),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(3),
-                        borderSide: const BorderSide(
-                          color: AppColors.black,
-                          width: 0.37,
-                        ),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(3),
-                        borderSide: const BorderSide(
-                          color: AppColors.black,
-                          width: 0.37,
-                        ),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(3),
-                        borderSide: const BorderSide(
-                          color: AppColors.black,
-                          width: 0.37,
-                        ),
-                      ),
-                    ),
-                  ),
+                CustomTextField(controller: phoneController, hintText: '+919988776563',textInputType: TextInputType.number)
                 ],
               ),
               SizedBox(
@@ -458,53 +276,8 @@ class _AddBasicDetailsState extends State<AddBasicDetails> {
                   SizedBox(
                     height: Sizes.responsiveSm(context),
                   ),
-                  TextField(
-                    controller: whatsappController,
-                    cursorColor: AppColors.black,
-                    textAlign: TextAlign.start,
-                    style: const TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                    ),
-                    expands: false,
-                    decoration: InputDecoration(
-                      hintText: 'WhatsApp Number',
-                      labelStyle: const TextStyle(
-                        fontSize: 8.5,
-                        fontWeight: FontWeight.w500,
-                      ),
-                      contentPadding: EdgeInsets.symmetric(
-                          vertical: Sizes.responsiveSm(context),
-                          horizontal: Sizes.responsiveLg(context)),
-                      alignLabelWithHint: true,
-                      hintStyle: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.secondaryText,
-                      ),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(3),
-                        borderSide: const BorderSide(
-                          color: AppColors.black,
-                          width: 0.37,
-                        ),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(3),
-                        borderSide: const BorderSide(
-                          color: AppColors.black,
-                          width: 0.37,
-                        ),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(3),
-                        borderSide: const BorderSide(
-                          color: AppColors.black,
-                          width: 0.37,
-                        ),
-                      ),
-                    ),
-                  ),
+                  CustomTextField(controller: whatsappController, hintText: '+919988776563',textInputType: TextInputType.number,)
+
                 ],
               ),
               SizedBox(
@@ -547,7 +320,7 @@ class _AddBasicDetailsState extends State<AddBasicDetails> {
                       )),
                   OutlinedButton(
                       style: OutlinedButton.styleFrom(
-                        side:   BorderSide(color: AppColors.primary),
+                        side:   BorderSide(color: AppColors.primary,width: 0.5),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(Sizes.radiusSm)),
                         padding: EdgeInsets.symmetric(
@@ -561,7 +334,7 @@ class _AddBasicDetailsState extends State<AddBasicDetails> {
                             .text);
                           });
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (ctx) =>  const ProfileSummary()));
+                              builder: (ctx) =>   AddProfileSummary()));
                         }
                       },
                       child:  Row(
@@ -593,3 +366,4 @@ class _AddBasicDetailsState extends State<AddBasicDetails> {
     );
   }
 }
+

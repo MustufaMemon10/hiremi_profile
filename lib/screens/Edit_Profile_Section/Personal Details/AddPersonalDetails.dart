@@ -18,12 +18,12 @@ class _AddPersonalDetailsState extends State<AddPersonalDetails> {
   String selectedGender = '';
   String selectedMaritalStatus = '';
   String differentlyAbled = '';
-  final homeController = TextEditingController();
-  final pinCodeController = TextEditingController();
-  final localAddressController = TextEditingController();
-  final permanentAddressController = TextEditingController();
-  final dobController = TextEditingController();
-  final categoryController = TextEditingController();
+  TextEditingController homeController = TextEditingController();
+  TextEditingController pinCodeController = TextEditingController();
+  TextEditingController localAddressController = TextEditingController();
+  TextEditingController permanentAddressController = TextEditingController();
+  TextEditingController dobController = TextEditingController();
+  TextEditingController categoryController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {

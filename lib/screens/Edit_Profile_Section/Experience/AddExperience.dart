@@ -20,11 +20,11 @@ class _AddExperienceState extends State<AddExperience> {
   String experience = '';
   String environment = '';
   String isCurrentCompany = '';
-  final organizationController = TextEditingController();
-  final jobTitleController = TextEditingController();
-  final skillSetController = TextEditingController();
-  final joiningDateController = TextEditingController();
-  final leavingDateController = TextEditingController();
+  TextEditingController organizationController = TextEditingController();
+  TextEditingController jobTitleController = TextEditingController();
+  TextEditingController skillSetController = TextEditingController();
+  TextEditingController joiningDateController = TextEditingController();
+  TextEditingController leavingDateController = TextEditingController();
 
   _selectDate(BuildContext context) async {
     DateTime? selectedDate = await showDatePicker(

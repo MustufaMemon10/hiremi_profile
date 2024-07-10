@@ -7,13 +7,22 @@ import '../../../core/common/widgets/appbar/AppBar.dart';
 import '../../../core/utils/constants/AppSizes.dart';
 import '../../../core/utils/constants/colors.dart';
 
-class AddEducation extends StatelessWidget {
-  AddEducation({super.key});
+class AddEducation extends StatefulWidget {
+  const AddEducation({super.key});
 
+  @override
+  State<AddEducation> createState() => _AddEducationState();
+}
+
+class _AddEducationState extends State<AddEducation> {
   TextEditingController educationController = TextEditingController();
+
   TextEditingController courseController = TextEditingController();
+
   TextEditingController yearController = TextEditingController();
+
   TextEditingController marksController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

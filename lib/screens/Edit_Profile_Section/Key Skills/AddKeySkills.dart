@@ -7,10 +7,16 @@ import '../../../core/utils/constants/colors.dart';
 import '../../Verified_Profile_Section/ProfileScreen.dart';
 import '../widgets/CustomTextField.dart';
 
-class AddKeySkills extends StatelessWidget {
-   AddKeySkills({super.key});
+class AddKeySkills extends StatefulWidget {
+   const AddKeySkills({super.key});
 
-   final skillController = TextEditingController();
+  @override
+  State<AddKeySkills> createState() => _AddKeySkillsState();
+}
+
+class _AddKeySkillsState extends State<AddKeySkills> {
+   TextEditingController skillController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

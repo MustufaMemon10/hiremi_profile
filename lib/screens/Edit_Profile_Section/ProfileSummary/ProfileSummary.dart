@@ -7,10 +7,15 @@ import 'package:hiremi_profile/screens/Edit_Profile_Section/widgets/CustomTextFi
 import '../../../core/utils/constants/colors.dart';
 import '../../Verified_Profile_Section/ProfileScreen.dart';
 
-class AddProfileSummary extends StatelessWidget {
-  AddProfileSummary({super.key});
+class AddProfileSummary extends StatefulWidget {
+  const AddProfileSummary({super.key});
 
-  final summaryController = TextEditingController();
+  @override
+  State<AddProfileSummary> createState() => _AddProfileSummaryState();
+}
+
+class _AddProfileSummaryState extends State<AddProfileSummary> {
+  TextEditingController summaryController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {

@@ -23,7 +23,7 @@ class KeySkills extends StatelessWidget {
       title: 'Key Skills',
       onTap: () =>
           Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) =>  AddKeySkills())),
+              builder: (context) =>  const AddKeySkills())),
       isTrue: isValid(),
       child: Wrap(
           runSpacing: 10,

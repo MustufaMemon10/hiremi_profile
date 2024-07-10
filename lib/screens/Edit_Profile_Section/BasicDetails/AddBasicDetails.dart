@@ -334,7 +334,7 @@ class _AddBasicDetailsState extends State<AddBasicDetails> {
                             .text);
                           });
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (ctx) =>   AddProfileSummary()));
+                              builder: (ctx) =>   const AddProfileSummary()));
                         }
                       },
                       child:  Row(

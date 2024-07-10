@@ -119,7 +119,7 @@ class _AddProfileSummaryState extends State<AddProfileSummary> {
                     onPressed: () {
                       if(summaryController.text.isNotEmpty){
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (ctx) =>    AddKeySkills()));
+                            builder: (ctx) =>    const AddKeySkills()));
                       }
                     },
                     child:  Row(

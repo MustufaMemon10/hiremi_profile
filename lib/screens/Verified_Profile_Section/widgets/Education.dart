@@ -22,7 +22,7 @@ class Education extends StatelessWidget {
     return OutlinedContainer(
       onTap: () =>
           Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) =>   AddEducation())),
+              builder: (context) =>   const AddEducation())),
       title: 'Education',
       isTrue: isValid(),
       child: Column(

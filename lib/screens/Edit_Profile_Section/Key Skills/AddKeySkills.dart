@@ -122,7 +122,7 @@ class _AddKeySkillsState extends State<AddKeySkills> {
                       onPressed: () {
                         if(skillController.text.isNotEmpty){
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) =>   AddEducation()));
+                              builder: (context) =>   const AddEducation()));
                         }
                       },
                       child:  Row(

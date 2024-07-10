@@ -19,7 +19,7 @@ class ProfileSummary extends StatelessWidget {
     return  OutlinedContainer(
       onTap: () =>
           Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) =>   AddProfileSummary())),
+              builder: (context) =>   const AddProfileSummary())),
       title: 'Profile Summary',
       isTrue: isValid(),
       child: Column(

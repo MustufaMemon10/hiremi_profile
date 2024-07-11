@@ -72,15 +72,12 @@ class PersonalInfoChild extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title, style: Theme.of(context).textTheme.labelLarge),
+        Text(title, style: const TextStyle(fontSize: 9.0,fontWeight: FontWeight.w500,color: Colors.black),),
         SizedBox(
           height: Sizes.responsiveXs(context),
         ),
         Text(subtitle,
-            style: Theme.of(context)
-                .textTheme
-                .labelLarge!
-                .apply(color: AppColors.secondaryText)),
+            style: TextStyle(fontSize: 9.0,fontWeight: FontWeight.w500,color: AppColors.secondaryText),),
         SizedBox(
           height: Sizes.responsiveSm(context),
         ),
